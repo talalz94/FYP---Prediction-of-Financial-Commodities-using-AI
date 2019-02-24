@@ -12,7 +12,7 @@ def MACD(data,stock):
     signal = stock['macds']        # Your signal line
     macd   = stock['macd']         # The MACD that need to cross the signal line
     #                                              to give you a Buy/Sell signal
-    listLongShort = ["No data"]    # Since you need at least two days in the for loop
+    listLongShort = ["No data"]    # no of timesteps in the for loop
 
     for i in range(1, len(signal)):
         #                          # If the MACD crosses the signal line upward
